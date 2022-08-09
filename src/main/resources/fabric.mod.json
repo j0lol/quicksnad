@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "quicksand-sugarcane",
+  "id": "quicksnad",
   "version": "${version}",
-  "name": "Quicksand Sugarcane",
-  "description": "Addon for Quicksand for growing sugarcane quickly!",
+  "name": "Quicksnad",
+  "description": "Addon for Quicksand with strange growth powers!",
   "authors": [
     "j0lol"
   ],
@@ -12,21 +12,21 @@
     "repo": "j0.lol"
   },
   "license": "MIT",
-  "icon": "assets/quicksand-sugarcane/icon.png",
+  "icon": "assets/quicksnad/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "lol.j0.quicksandsugarcane.client.QuicksandSugarcaneClient"
+      "lol.j0.quicksnad.client.QuicksnadClient"
     ],
     "main": [
-      "lol.j0.quicksandsugarcane.QuicksandSugarcane"
+      "lol.j0.quicksnad.Quicksnad"
     ]
   },
   "mixins": [
-    "quicksand-sugarcane.mixins.json"
+    "quicksnad.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.9",
+    "fabricloader": ">=0.14.0",
     "fabric": "*",
     "minecraft": "1.19"
   }
