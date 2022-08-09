@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "quicksand-sugarcane",
+  "version": "${version}",
+  "name": "Quicksand Sugarcane",
+  "description": "Addon for Quicksand for growing sugarcane quickly!",
+  "authors": [
+    "j0lol"
+  ],
+  "contact": {
+    "website": "j0.lol",
+    "repo": "j0.lol"
+  },
+  "license": "MIT",
+  "icon": "assets/quicksand-sugarcane/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "lol.j0.quicksandsugarcane.client.QuicksandSugarcaneClient"
+    ],
+    "main": [
+      "lol.j0.quicksandsugarcane.QuicksandSugarcane"
+    ]
+  },
+  "mixins": [
+    "quicksand-sugarcane.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19"
+  }
+}
