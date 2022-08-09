@@ -1,6 +1,5 @@
 package lol.j0.quicksandsugarcane.block;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.SandBlock;
 
 public class Quicksand extends SandBlock {
