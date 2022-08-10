@@ -15,9 +15,6 @@
   "icon": "assets/quicksnad/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "lol.j0.quicksnad.client.QuicksnadClient"
-    ],
     "main": [
       "lol.j0.quicksnad.Quicksnad"
     ]

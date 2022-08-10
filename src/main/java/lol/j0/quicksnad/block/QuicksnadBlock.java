@@ -7,6 +7,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
@@ -20,7 +21,7 @@ public class QuicksnadBlock extends QuicksandBlock {
 
     @Override
     public ItemStack tryDrainFluid(WorldAccess world, BlockPos pos, BlockState state) {
-        return null;
+        return new ItemStack(Items.BUCKET) ;
     }
 
     @Override
