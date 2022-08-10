@@ -4,7 +4,6 @@ import net.minecraft.block.*;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.random.Random;
 import net.minecraft.world.WorldView;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -12,12 +11,14 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import java.util.Random;
+
 import static lol.j0.quicksnad.Quicksnad.QUICKSNAD;
 import static net.minecraft.block.SugarCaneBlock.AGE;
 
 @Mixin(CactusBlock.class)
 public class CactusBlockMixin {
-    @Inject(at = @At("HEAD"), method = "randomTick(Lnet/minecraft/block/BlockState;Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/random/Random;)V", cancellable = true)
+    @Inject(at = @At("HEAD"), method = "Lnet/minecraft/block/CactusBlock;randomTick(Lnet/minecraft/block/BlockState;Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/util/math/BlockPos;Ljava/util/Random;)V", cancellable = true)
     private void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random, CallbackInfo ci) {
         if (world.isAir(pos.up())) {
             int i = 1;
@@ -30,7 +31,7 @@ public class CactusBlockMixin {
                 if (j >= 14) {
                     world.setBlockState(pos.up(), Blocks.CACTUS.getDefaultState());
                     world.setBlockState(pos, state.with(AGE, 0), Block.NO_REDRAW);
-                    world.updateNeighbor(state.with(AGE, 0), pos.up(), Blocks.CACTUS, pos, false);
+                    state.with(AGE, 0).neighborUpdate(world, pos.up(), Blocks.CACTUS, pos, false);
 
                 } else {
                     world.setBlockState(pos, state.with(AGE, j + 2), Block.NO_REDRAW);
@@ -39,7 +40,7 @@ public class CactusBlockMixin {
                 if (j >= 15) {
                     world.setBlockState(pos.up(), Blocks.CACTUS.getDefaultState());
                     world.setBlockState(pos, state.with(AGE, 0), Block.NO_REDRAW);
-                    world.updateNeighbor(state.with(AGE, 0), pos.up(), Blocks.CACTUS, pos, false);
+                    state.with(AGE, 0).neighborUpdate(world, pos.up(), Blocks.CACTUS, pos, false);
                 } else {
                     world.setBlockState(pos, state.with(AGE, j + 1), Block.NO_REDRAW);
                 }

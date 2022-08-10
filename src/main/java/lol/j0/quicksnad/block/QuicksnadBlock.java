@@ -31,7 +31,7 @@ public class QuicksnadBlock extends QuicksandBlock {
         }
 
         if (!entity.isSpectator() && (this.hasEntityMoved(entity) || (double)world.getRandom().nextFloat() < 0.2)) {
-            if (!entity.getType().isIn(ModTags.SURVIVES_IN_QUICKSAND) && entity instanceof LivingEntity living) {
+            if (entity instanceof LivingEntity living) {
                 if (world.getBlockState(new BlockPos(entity.getBlockX(), entity.getEyeY() - 0.11, entity.getBlockZ())).isIn(ModTags.QUICKSAND)) {
                     living.damage(Quicksand.QUICKSAND_DAMAGE, 1.0F);
                 }
