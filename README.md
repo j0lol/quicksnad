@@ -1,4 +1,4 @@
-Quicksand imbued with the souls of the fallen...
+Quicksnad is an addon for [Quicksand](https://modrinth.com/mod/quicksand) that grows your crops quicker! The Quicks**na**d block will double the growth speed of cacti & sugarcane, and remove the height limit so that your sugarcane beach can become a wall of green!
 
 # Features
 - Removes the height limit on cacti & sugar cane grown on Quicksnad
@@ -6,10 +6,16 @@ Quicksand imbued with the souls of the fallen...
 - You can still sink in it!
 - Fixes a weird crafting bug w/ powdered snow buckets not returning buckets
 
-# Screenshots
-...
 
+# Screenshots
+![Screenshot of crafting table](https://codeberg.org/j0/quicksand/raw/branch/main/screenshots/Screenshot%201.png)
+
+![Screenshot of sugar cane growing on quicksnad](https://codeberg.org/j0/quicksand/raw/branch/main/screenshots/Screenshot%202.png)
+
+![Screenshot of cacti growing on quicksnad](https://codeberg.org/j0/quicksand/raw/branch/main/screenshots/Screenshot%203.png)
 
 # Credits
 - Schnupbups for making [Quicksand](https://modrinth.com/mod/quicksand)
 - obw, sarene & opl for helping me with mixins & java
+- whoever came up with the original Snad mod idea
+- [Apotheosis](https://www.curseforge.com/minecraft/mc-mods/apotheosis)  
