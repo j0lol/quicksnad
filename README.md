@@ -1,3 +1,5 @@
+[Codeberg](https://codeberg.org/j0/quicksnad/), [Github Mirror](https://github.com/j0lol/quicksnad)
+
 Quicksnad is an addon for [Quicksand](https://modrinth.com/mod/quicksand) that grows your crops quicker! The Quicks**na**d block will double the growth speed of cacti & sugarcane, and remove the height limit so that your sugarcane beach can become a wall of green!
 
 # Features
