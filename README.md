@@ -17,5 +17,5 @@ Quicksnad is an addon for [Quicksand](https://modrinth.com/mod/quicksand) that g
 # Credits
 - Schnupbups for making [Quicksand](https://modrinth.com/mod/quicksand)
 - obw, sarene & opl for helping me with mixins & java
-- whoever came up with the original Snad mod idea
+- TheRoBrit for Snad
 - [Apotheosis](https://www.curseforge.com/minecraft/mc-mods/apotheosis)  
