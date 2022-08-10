@@ -9,7 +9,7 @@
   ],
   "contact": {
     "website": "j0.lol",
-    "repo": "j0.lol"
+    "repo": "codeberg.org/j0/quicksnad"
   },
   "license": "MIT",
   "icon": "assets/quicksnad/icon.png",
@@ -25,6 +25,7 @@
   "depends": {
     "fabricloader": ">=0.6.1",
     "fabric": "*",
-    "minecraft": ">=1.18.2"
+    "minecraft": ">=1.18.2",
+    "quicksand": ">=1.1.0"
   }
 }
