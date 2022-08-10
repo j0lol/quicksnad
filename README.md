@@ -6,7 +6,10 @@ Quicksand imbued with the souls of the fallen...
 - You can still sink in it!
 - Fixes a weird crafting bug w/ powdered snow buckets not returning buckets
 
+# Screenshots
+...
 
-## Credits
+
+# Credits
 - Schnupbups for making [Quicksand](https://modrinth.com/mod/quicksand)
 - obw, sarene & opl for helping me with mixins & java
